@@ -1,0 +1,23 @@
+name: LeaderStats
+version: '${project.version}'
+main: io.github.standardan.leaderstats.LeaderStatsPlugin
+api-version: '1.21'
+description: Tracks player stats with leaderboards, holograms, and PlaceholderAPI placeholders.
+author: Standardan
+softdepend: [PlaceholderAPI]
+
+libraries:
+  - org.xerial:sqlite-jdbc:3.46.1.3
+
+commands:
+  stats:
+    description: View stats, leaderboards, and manage holograms.
+    usage: /stats [top <stat>|hologram <stat>|reload]
+
+permissions:
+  leaderstats.use:
+    description: View your stats and leaderboards.
+    default: true
+  leaderstats.admin:
+    description: Manage holograms and reload.
+    default: op

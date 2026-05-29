@@ -1,0 +1,7 @@
+# LeaderStats configuration.
+
+# How often (in seconds) stats are flushed to disk and leaderboards/holograms refresh.
+refresh-seconds: 60
+
+# Holograms are created in-game with /stats hologram <stat>; this list is written automatically.
+holograms: []
